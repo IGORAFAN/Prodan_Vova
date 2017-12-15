@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prodan_Vova", "Prodan_Vova.vcxproj", "{24F3DFD5-644E-4B37-85C6-AF8BD0D6540B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24F3DFD5-644E-4B37-85C6-AF8BD0D6540B}.Debug|x64.ActiveCfg = Debug|x64
+		{24F3DFD5-644E-4B37-85C6-AF8BD0D6540B}.Debug|x64.Build.0 = Debug|x64
+		{24F3DFD5-644E-4B37-85C6-AF8BD0D6540B}.Debug|x86.ActiveCfg = Debug|Win32
+		{24F3DFD5-644E-4B37-85C6-AF8BD0D6540B}.Debug|x86.Build.0 = Debug|Win32
+		{24F3DFD5-644E-4B37-85C6-AF8BD0D6540B}.Release|x64.ActiveCfg = Release|x64
+		{24F3DFD5-644E-4B37-85C6-AF8BD0D6540B}.Release|x64.Build.0 = Release|x64
+		{24F3DFD5-644E-4B37-85C6-AF8BD0D6540B}.Release|x86.ActiveCfg = Release|Win32
+		{24F3DFD5-644E-4B37-85C6-AF8BD0D6540B}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0DB262E-8501-413C-829F-7F526F7CDB74}
+	EndGlobalSection
+EndGlobal
