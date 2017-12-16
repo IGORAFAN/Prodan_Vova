@@ -2,7 +2,7 @@
 #include < iostream > 
 #include < conio.h > 
 #include < queue >
-#include < string>
+#include < string >
 #include "Header.h"
 using namespace std;
 
@@ -11,12 +11,43 @@ queue < double > line;
 void prewiev() {
 	cout << "Добро пожаловать!" << endl;
 	cout << "Программа создана для роботы с очередью!"<<endl<<endl;
+
+	//float i = 0.1;
+	//float j = 0.2;
+	//float sum = i + j;
+	//cout << sum;
+	//line.emplace(1);
+	//line.emplace(2);
+	//cout << line.size() << endl;
+	//line.emplace(3);
+	//line.emplace(4);
+	//cout << line.size() << endl;
+	//line.emplace(5);
+	//line.emplace(6);
+	//cout << line.size() << endl;
+	//line.emplace(7);
+	//line.emplace(8);
+	//cout << line.size() << endl;
+	//line.emplace(9);
+	//line.emplace(10);
+	//cout << line.size() << endl;
+	//line.emplace(11);
+	//line.emplace(12);
+	//cout << line.size() << endl;
+	//line.emplace(13);
+	//line.emplace(14);
+	//cout << line.size() << endl;
+	//line.emplace(15);
+	//line.emplace(16);
+	//cout << line.size() << endl;
+	//line.emplace(17);
+	//cout << line.size() << endl;
 }
 
 double set_Data() {
 	double temp;
 	for (;;) {
-		cout << "\nВведите елемент в очередь> ";
+		cout << "Введите елемент в очередь> ";
 		cin >> temp;
 		if (!cin) {
 			cout << "Не корректно введены данные\n";
@@ -36,31 +67,19 @@ void set_1Element(double arg_elem) {
 void set_Elements(double arg_elem) {
 	line.emplace(arg_elem);
 	cout << "Елемент введён!" << endl << endl;
-	for (;;) {
-		int temp;
-		cout << "1 - Ввести ещё элемент" << endl;
-		cout << "2 - Хватит!" << endl;
-		cout << "Ввод> "; cin >> temp;
-		if (temp == 1) {
-			
-			set_Elements(set_Data());
-		}
-		else if (temp == 2) {
-		
-			system("cls");
-			what_u_want();
-		}
-		else {
-			cout << "\nНе корректно введены данные\n";
-		}
-	}
+	string temp;
+	cout << "exit - Выход из ввода" << endl;
+	cout << "Ввод> "; cin >> temp;
+	if (temp == "exit")
+		what_u_want();	
+	else if(cin.fail())
+	cout << "Не корректно введены данные\n";
+	else set_Elements(set_Data());
 }
 
 int what_Size() {
 	if (!line.empty())
 		return line.size();
-	else
-		return NULL;
 }
 
 void delete_1Elem() {
